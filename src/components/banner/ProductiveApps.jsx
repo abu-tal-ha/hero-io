@@ -1,5 +1,5 @@
 import React from "react";
-import phoneImg from "../assets/hero.png"; // <-- your image path
+import phoneImg from "../../assets/hero.png"; // <-- your image path
 import { FaApple } from "react-icons/fa";
 import StatsSection from "./StatsSection";
 const ProductiveApps = () => {

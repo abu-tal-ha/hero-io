@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function TrendingApps() {
   const [apps, setApps] = useState([]);
@@ -23,10 +24,10 @@ export default function TrendingApps() {
         </p>
       </div>
 
-      {/* Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {apps.map((app) => (
-          <div
+          <Link
+            to={`appDetails/${app.id}`}
             key={app.id}
             className="bg-white rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 overflow-hidden group"
           >
@@ -54,15 +55,18 @@ export default function TrendingApps() {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
       {/* Button */}
       <div className="flex justify-center mt-10">
-        <button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 mb-4 rounded-md hover:scale-105 transition">
+        <Link
+          to="/apps"
+          className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 mb-4 rounded-md hover:scale-105 transition"
+        >
           Show All
-        </button>
+        </Link>
       </div>
     </section>
   );

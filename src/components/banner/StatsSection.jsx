@@ -1,4 +1,5 @@
 import React from "react";
+import TrendingApps from "../trending/TrendingApps";
 
 export default function StatsSection() {
   return (
