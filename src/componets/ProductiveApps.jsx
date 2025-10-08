@@ -1,6 +1,6 @@
 import React from "react";
 import phoneImg from "../assets/hero.png"; // <-- your image path
-import { FaGooglePlay, FaApple } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 import StatsSection from "./StatsSection";
 const ProductiveApps = () => {
   return (
