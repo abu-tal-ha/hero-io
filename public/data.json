@@ -1,0 +1,510 @@
+ [
+  {
+    "id": 1,
+    "image": "https://play-lh.googleusercontent.com/DgULTlG17t3v_05hXAaReO09Sx5GxP5oi2m4l5xq9uIQ2nnk9U8lrdek9tOjm_BfK6pA=w240-h480-rw",
+    "title": "ChatWave",
+    "companyName": "Techify Ltd",
+    "description": "A real-time messaging app with AI-powered replies.",
+    "size": 45,
+    "reviews": 2350,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1080 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://thumbs.dreamstime.com/b/stylish-laptop-note-book-craft-background-girl-hands-holding-pen-typing-working-marketing-concept-flat-lay-90393396.jpg",
+    "title": "NoteCraft",
+    "companyName": "SoftWind Inc.",
+    "description": "Smart note-taking with cloud sync and handwriting support.",
+    "size": 28,
+    "reviews": 1020,
+    "ratingAvg": 4.4,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ir2feSVQaU8mDuph9aEKnvWYaESviQ_-tg&s",
+    "title": "FitZone",
+    "companyName": "Active Apps",
+    "description": "Track your fitness goals and daily activities easily.",
+    "size": 60,
+    "reviews": 560,
+    "ratingAvg": 4.3,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 170 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://play-lh.googleusercontent.com/_Gn2BAAu7_8cNg6fCQb7uEzE3THXEiGqEIK1emlWfDJk0gl6-dp3pEKsSYs_6gGHikQ=w240-h480-rw",
+    "title": "TaskFlow",
+    "companyName": "ZenWorks",
+    "description": "Organize your tasks and projects with seamless collaboration.",
+    "size": 34,
+    "reviews": 1430,
+    "ratingAvg": 4.7,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 330 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn.pixabay.com/photo/2025/09/26/08/00/dawn-9856375_640.jpg",
+    "title": "PhotoPix",
+    "companyName": "Visionary Apps",
+    "description": "Enhance your photos with filters and one-tap AI retouch.",
+    "size": 75,
+    "reviews": 3250,
+    "ratingAvg": 4.5,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 850 },
+      { "name": "5 star", "count": 1620 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://www.studypro.net/wp-content/uploads/2020/05/studypro-image-2.jpg",
+    "title": "StudyPro",
+    "companyName": "EduLink",
+    "description": "AI-powered flashcards and study planner for students.",
+    "size": 48,
+    "reviews": 850,
+    "ratingAvg": 4.8,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 230 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://play-lh.googleusercontent.com/vpG152NCB5VLQ9AVp1CJQVQJ-059ORk0Wx_cM9CzcLZvy6ZAtgFMKBgUODRDJydHpqE=w240-h480-rw",
+    "title": "TripMate",
+    "companyName": "GoWorld",
+    "description": "Plan trips, explore destinations, and share itineraries.",
+    "size": 90,
+    "reviews": 2900,
+    "ratingAvg": 4.6,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1610 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://b.zmtcdn.com/data/pictures/chains/0/19382820/0850978458d3cd1ffd793e07759a20cb.jpg",
+    "title": "Foodiez",
+    "companyName": "EatSmart",
+    "description": "Find nearby restaurants and order food online.",
+    "size": 80,
+    "reviews": 3720,
+    "ratingAvg": 4.2,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 950 },
+      { "name": "5 star", "count": 1620 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://placehold.co/200x200?text=Weatherly",
+    "title": "Weatherly",
+    "companyName": "SkyTech",
+    "description": "Accurate forecasts and real-time severe weather alerts.",
+    "size": 52,
+    "reviews": 1980,
+    "ratingAvg": 4.1,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 760 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://placehold.co/200x200?text=Musicify",
+    "title": "Musicify",
+    "companyName": "AudioCore",
+    "description": "Stream and download your favorite songs ad-free.",
+    "size": 65,
+    "reviews": 4120,
+    "ratingAvg": 4.7,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 2340 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://placehold.co/200x200?text=MindEase",
+    "title": "MindEase",
+    "companyName": "CalmNest",
+    "description": "Relaxation and guided meditation app with mood tracking.",
+    "size": 58,
+    "reviews": 2600,
+    "ratingAvg": 4.8,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1760 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://placehold.co/200x200?text=Readify",
+    "title": "Readify",
+    "companyName": "BookVerse",
+    "description": "Discover and read thousands of ebooks and audiobooks.",
+    "size": 85,
+    "reviews": 3450,
+    "ratingAvg": 4.5,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1800 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://placehold.co/200x200?text=CryptoHub",
+    "title": "CryptoHub",
+    "companyName": "BlockChainers",
+    "description": "Monitor crypto prices and manage your digital wallet.",
+    "size": 72,
+    "reviews": 1870,
+    "ratingAvg": 4.4,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://placehold.co/200x200?text=Budgetly",
+    "title": "Budgetly",
+    "companyName": "SmartMoney",
+    "description": "Track your expenses and savings automatically.",
+    "size": 50,
+    "reviews": 1650,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 790 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://placehold.co/200x200?text=Shoply",
+    "title": "Shoply",
+    "companyName": "EcomSphere",
+    "description": "One-stop online shopping with fast delivery.",
+    "size": 110,
+    "reviews": 5290,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3060 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://placehold.co/200x200?text=Travelify",
+    "title": "Travelify",
+    "companyName": "WanderWorks",
+    "description": "Book flights, hotels, and experiences in one place.",
+    "size": 92,
+    "reviews": 2980,
+    "ratingAvg": 4.7,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1780 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://placehold.co/200x200?text=DocuSign",
+    "title": "DocuSign Mobile",
+    "companyName": "Signify Labs",
+    "description": "Securely sign and share digital documents.",
+    "size": 64,
+    "reviews": 2150,
+    "ratingAvg": 4.6,
+    "downloads": 990000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1170 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://placehold.co/200x200?text=PlayBox",
+    "title": "PlayBox",
+    "companyName": "FunSoft",
+    "description": "Casual and multiplayer games in one app.",
+    "size": 140,
+    "reviews": 5100,
+    "ratingAvg": 4.3,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 850 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2750 }
+    ]
+  }
+  ,   
+  {
+    "id": 19,
+    "image": "https://placehold.co/200x200?text=FocusZen",
+    "title": "FocusZen",
+    "companyName": "Clarity Labs",
+    "description": "Pomodoro-style timer to stay focused while studying.",
+    "size": 42,
+    "reviews": 1870,
+    "ratingAvg": 4.8,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1190 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://placehold.co/200x200?text=LangMate",
+    "title": "LangMate",
+    "companyName": "LingoTech",
+    "description": "Chat and learn new languages with native speakers.",
+    "size": 55,
+    "reviews": 2680,
+    "ratingAvg": 4.7,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 230 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1570 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://placehold.co/200x200?text=Sleepio",
+    "title": "Sleepio",
+    "companyName": "DreamWare",
+    "description": "Track your sleep and improve rest with guided sessions.",
+    "size": 70,
+    "reviews": 2340,
+    "ratingAvg": 4.5,
+    "downloads": 1150000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 560 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://placehold.co/200x200?text=Taskify",
+    "title": "Taskify",
+    "companyName": "DevPro Studio",
+    "description": "Simple and beautiful task manager with reminders.",
+    "size": 40,
+    "reviews": 950,
+    "ratingAvg": 4.4,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://placehold.co/200x200?text=GoalTrack",
+    "title": "GoalTrack",
+    "companyName": "Motivio",
+    "description": "Track your life goals and daily achievements easily.",
+    "size": 53,
+    "reviews": 1340,
+    "ratingAvg": 4.6,
+    "downloads": 670000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 670 }
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://placehold.co/200x200?text=PetPal",
+    "title": "PetPal",
+    "companyName": "Animalify",
+    "description": "Take care of your pets and track their health records.",
+    "size": 58,
+    "reviews": 1920,
+    "ratingAvg": 4.5,
+    "downloads": 810000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 1030 }
+    ]
+  },
+  {
+    "id": 25,
+    "image": "https://placehold.co/200x200?text=Artify",
+    "title": "Artify",
+    "companyName": "DesignX",
+    "description": "Create and share digital artwork with vibrant tools.",
+    "size": 85,
+    "reviews": 2760,
+    "ratingAvg": 4.7,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1520 }
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://placehold.co/200x200?text=EcoTrack",
+    "title": "EcoTrack",
+    "companyName": "GreenApps",
+    "description": "Track your carbon footprint and eco-friendly habits.",
+    "size": 47,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "id": 27,
+    "image": "https://placehold.co/200x200?text=InspireMe",
+    "title": "InspireMe",
+    "companyName": "MindFuel",
+    "description": "Daily motivation quotes and positivity tracker.",
+    "size": 38,
+    "reviews": 1680,
+    "ratingAvg": 4.9,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 1180 }
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://placehold.co/200x200?text=Cooksy",
+    "title": "Cooksy",
+    "companyName": "KitchenPro",
+    "description": "Find recipes, meal plans, and grocery lists in one app.",
+    "size": 77,
+    "reviews": 2990,
+    "ratingAvg": 4.5,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 740 },
+      { "name": "5 star", "count": 1490 }
+    ]
+  }
+
+]
+
+ 
