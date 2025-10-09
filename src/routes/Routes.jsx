@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
         Component: Installation,
       },
       {
-        path: "appDetails/:id",
+        path: "/appDetails/:id",
         element: <AppDetails />,
         loader: async () => {
           const res = await fetch("/data.json");

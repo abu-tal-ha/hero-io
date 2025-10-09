@@ -7,13 +7,11 @@ const Installation = () => {
   const [apps, setApps] = useState([]);
   const [sortBy, setSortBy] = useState("");
 
-  // প্রথমবার পেজ লোডে localStorage থেকে ইনস্টল করা অ্যাপগুলো লোড করো
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("installedApps")) || [];
     setApps(saved);
   }, []);
 
-  // Uninstall করা
   const handleUninstall = (id) => {
     const updated = apps.filter((app) => app.id !== id);
     setApps(updated);
@@ -24,15 +22,14 @@ const Installation = () => {
     });
   };
 
-  // Sort ফাংশন (শুধু downloads অনুযায়ী)
   const handleSort = (value) => {
     setSortBy(value);
     let sortedApps = [...apps];
 
     if (value === "downloads-high") {
-      sortedApps.sort((a, b) => b.downloads - a.downloads); // High → Low
+      sortedApps.sort((a, b) => b.downloads - a.downloads);
     } else if (value === "downloads-low") {
-      sortedApps.sort((a, b) => a.downloads - b.downloads); // Low → High
+      sortedApps.sort((a, b) => a.downloads - b.downloads);
     }
 
     setApps(sortedApps);
