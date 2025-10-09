@@ -6,7 +6,7 @@ export default function TrendingApps() {
   const [apps, setApps] = useState([]);
 
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("/data.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch apps data");
         return res.json();
