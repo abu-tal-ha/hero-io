@@ -30,7 +30,11 @@ export default function Navbar() {
           {/* Logo */}
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <img src="/src/assets/logo.png" alt="logo" className="w-8 h-8" />
+              <img
+                src="https://i.ibb.co.com/BVhbL6fW/logo.png"
+                alt="logo"
+                className="w-8 h-8"
+              />
               <h1 className="font-bold text-lg text-purple-600">HERO.IO</h1>
             </Link>
           </div>

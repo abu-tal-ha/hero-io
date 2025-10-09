@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/src/assets/logo.png"
+              src="https://i.ibb.co.com/BVhbL6fW/logo.png"
               alt="Hero.io Logo"
               className="w-8 h-8 rounded"
             />

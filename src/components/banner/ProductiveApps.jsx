@@ -21,7 +21,7 @@ const ProductiveApps = () => {
       <div className="flex justify-center gap-6 mb-10 flex-wrap">
         {/* Google Play Button */}
         <a
-          href="https://play.google.com/store"
+          href="https://i.ibb.co.com/Fbstr8zB/play.png"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-6 py-3 cursor-pointer rounded hover:bg-gray-100 transition"
