@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaGithub, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import LoadingOverlay from "./LoadingOverlay";
+import { GoHome } from "react-icons/go";
+import { FaAppStore } from "react-icons/fa";
+import { MdInstallDesktop } from "react-icons/md";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -36,7 +39,7 @@ export default function Navbar() {
           <ul className="hidden md:flex items-center gap-6">
             <Link to="/">
               <li
-                className={`relative font-medium transition-all duration-300 
+                className={`relative flex items-center gap-2 font-medium transition-all duration-300 
                   ${
                     isActive("/")
                       ? "text-purple-600 after:w-full"
@@ -46,13 +49,13 @@ export default function Navbar() {
                   after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                   after:transition-all after:duration-300`}
               >
-                Home
+                <GoHome /> Home
               </li>
             </Link>
 
             <Link to="/apps">
               <li
-                className={`relative font-medium transition-all duration-300 
+                className={`relative  flex items-center gap-2 font-medium transition-all duration-300 
                   ${
                     isActive("/apps")
                       ? "text-purple-600 after:w-full"
@@ -62,13 +65,13 @@ export default function Navbar() {
                   after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                   after:transition-all after:duration-300`}
               >
-                Apps
+                <FaAppStore /> Apps
               </li>
             </Link>
 
             <Link to="/installation">
               <li
-                className={`relative font-medium transition-all duration-300 
+                className={`relative font-medium flex items-center gap-2  transition-all duration-300 
                   ${
                     isActive("/installation")
                       ? "text-purple-600 after:w-full"
@@ -78,7 +81,7 @@ export default function Navbar() {
                   after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                   after:transition-all after:duration-300`}
               >
-                Installation
+                <MdInstallDesktop /> Installation
               </li>
             </Link>
           </ul>
@@ -105,7 +108,7 @@ export default function Navbar() {
             <ul className="flex flex-col items-center gap-4 py-4">
               <Link to="/" onClick={() => setOpen(false)}>
                 <li
-                  className={`relative font-medium transition-all duration-300 
+                  className={`relative flex items-center gap-2 font-medium transition-all duration-300 
                     ${
                       isActive("/")
                         ? "text-purple-600 after:w-full"
@@ -115,13 +118,13 @@ export default function Navbar() {
                     after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                     after:transition-all after:duration-300`}
                 >
-                  Home
+                  <GoHome /> Home
                 </li>
               </Link>
 
               <Link to="/apps" onClick={() => setOpen(false)}>
                 <li
-                  className={`relative font-medium transition-all duration-300 
+                  className={`relative flex items-center gap-2 font-medium transition-all duration-300 
                     ${
                       isActive("/apps")
                         ? "text-purple-600 after:w-full"
@@ -131,13 +134,13 @@ export default function Navbar() {
                     after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                     after:transition-all after:duration-300`}
                 >
-                  Apps
+                  <FaAppStore /> Apps
                 </li>
               </Link>
 
               <Link to="/installation" onClick={() => setOpen(false)}>
                 <li
-                  className={`relative font-medium transition-all duration-300 
+                  className={`relative flex items-center gap-2 font-medium transition-all duration-300 
                     ${
                       isActive("/installation")
                         ? "text-purple-600 after:w-full"
@@ -147,7 +150,7 @@ export default function Navbar() {
                     after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:left-0 after:-bottom-1
                     after:transition-all after:duration-300`}
                 >
-                  Installation
+                  <MdInstallDesktop /> Installation
                 </li>
               </Link>
 

@@ -5,6 +5,7 @@ import {
   FaArrowUp,
   FaGithub,
 } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function Footer() {
   return (
@@ -30,19 +31,22 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:text-purple-400 transition">
+              <Link to="/" className="hover:text-purple-400 transition">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-purple-400 transition">
+              <Link to="/apps" className="hover:text-purple-400 transition">
                 Apps
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-purple-400 transition">
+              <Link
+                to="/installation"
+                className="hover:text-purple-400 transition"
+              >
                 Installation
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:text-purple-400 transition">

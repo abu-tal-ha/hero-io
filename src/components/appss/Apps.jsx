@@ -33,7 +33,7 @@ export default function Apps() {
       );
       setFilteredApps(filtered);
       setLoading(false);
-    }, 300); // 300ms debounce
+    }, 300);
 
     return () => clearTimeout(timer);
   }, [searchTerm, apps]);
@@ -48,8 +48,6 @@ export default function Apps() {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-
-      {/* Search Bar */}
       <div className="max-w-7xl mx-auto mt-20 flex flex-col sm:flex-row items-center justify-between mb-6 px-2">
         <h3 className="font-semibold text-gray-800 text-lg mb-3 sm:mb-0">
           ({filteredApps.length}) Apps Found
@@ -67,11 +65,9 @@ export default function Apps() {
         </div>
       </div>
 
-      {/* Grid */}
       <div className="max-w-7xl mx-auto">
         {loading ? (
           <div className="flex items-center justify-center py-20 space-x-4">
-            {/* L letter */}
             <div className="text-6xl font-bold text-gray-400">L</div>
 
             <div className="w-14 h-14">
@@ -82,7 +78,6 @@ export default function Apps() {
               />
             </div>
 
-            {/* Loading text with letter spacing */}
             <div className="text-gray-400 font-medium text-6xl tracking-widest">
               OADING
             </div>

@@ -24,17 +24,17 @@ const Installation = () => {
     });
   };
 
-  // Sort ফাংশন
+  // Sort ফাংশন (শুধু downloads অনুযায়ী)
   const handleSort = (value) => {
     setSortBy(value);
     let sortedApps = [...apps];
-    if (value === "size") {
-      sortedApps.sort((a, b) => a.size - b.size);
-    } else if (value === "rating") {
-      sortedApps.sort((a, b) => b.ratingAvg - a.ratingAvg);
-    } else if (value === "downloads") {
-      sortedApps.sort((a, b) => b.downloads - a.downloads);
+
+    if (value === "downloads-high") {
+      sortedApps.sort((a, b) => b.downloads - a.downloads); // High → Low
+    } else if (value === "downloads-low") {
+      sortedApps.sort((a, b) => a.downloads - b.downloads); // Low → High
     }
+
     setApps(sortedApps);
   };
 
@@ -54,15 +54,17 @@ const Installation = () => {
           <p className="text-gray-600 md:text-xl font-bold">
             {apps.length} Apps Found
           </p>
+
           <select
             value={sortBy}
             onChange={(e) => handleSort(e.target.value)}
             className="border border-gray-300 rounded-md px-3 py-2 text-sm"
           >
-            <option value="">Sort By</option>
-            <option value="size">Sort By Size</option>
-            <option value="rating">Sort By Rating</option>
-            <option value="downloads">Sort By Downloads</option>
+            <option value="" disabled>
+              Sort By Size
+            </option>
+            <option value="downloads-high">High → Low</option>
+            <option value="downloads-low">Low → High</option>
           </select>
         </div>
 
