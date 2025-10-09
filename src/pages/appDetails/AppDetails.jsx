@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useParams } from "react-router";
 import { FaDownload, FaStar, FaCommentDots } from "react-icons/fa";
 import {
   BarChart,
@@ -11,6 +11,7 @@ import {
   CartesianGrid,
 } from "recharts";
 import { toast, Toaster } from "react-hot-toast"; // ✅ Toast Import
+import errorImg from "../../assets/App-Error.png";
 
 export default function AppDetails() {
   const { id } = useParams();
@@ -22,7 +23,20 @@ export default function AppDetails() {
 
   if (!app) {
     return (
-      <div className="py-40 text-center text-gray-500">App not found.</div>
+      <div className="flex flex-col items-center justify-center text-center py-32 text-gray-700">
+        <img className="py-20" src={errorImg} alt="" />
+        <h2 className="text-4xl font-semibold mt-2">Oops, page not found!</h2>
+        <p className="text-gray-500 py-5">
+          The page you are looking for is not available.
+        </p>
+
+        <Link
+          to="/"
+          className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-8 py-2 rounded font-medium hover:opacity-90 transition"
+        >
+          Go Back!
+        </Link>
+      </div>
     );
   }
 
@@ -31,7 +45,7 @@ export default function AppDetails() {
     setInstalled(true);
     toast.success(`${app.title} installed successfully!`, {
       duration: 3000,
-      position: "top-right",
+      position: "top-center",
     });
   };
 
@@ -91,13 +105,20 @@ export default function AppDetails() {
           <button
             onClick={handleInstall}
             disabled={installed}
-            className={`mt-8 font-semibold px-6 py-2 rounded-lg transition ${
+            className={`relative overflow-hidden mt-8 font-semibold px-6 py-2 rounded-lg transition-all duration-300 ${
               installed
-                ? "bg-gray-400 text-white cursor-not-allowed"
-                : "bg-green-500 hover:bg-green-700 text-white cursor-pointer"
+                ? "bg-[#10b981c4] text-white cursor-not-allowed"
+                : "bg-[#10b981] hover:bg-[#10b981c4] text-white cursor-pointer"
             }`}
           >
-            {installed ? "Installed" : `Install Now (${app.size} MB)`}
+            {/* ✨ Animated Gradient Overlay */}
+            {!installed && (
+              <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shine" />
+            )}
+
+            <span className="relative z-10">
+              {installed ? "Installed" : `Install Now (${app.size} MB)`}
+            </span>
           </button>
         </div>
       </div>

@@ -63,7 +63,7 @@ export default function TrendingApps() {
       <div className="flex justify-center mt-10">
         <Link
           to="/apps"
-          className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 mb-4 rounded-md hover:scale-105 transition"
+          className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-12 py-2 mb-12 rounded-md hover:scale-105 transition"
         >
           Show All
         </Link>

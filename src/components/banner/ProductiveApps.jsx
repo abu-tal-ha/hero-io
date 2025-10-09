@@ -19,15 +19,27 @@ const ProductiveApps = () => {
 
       {/* Store Buttons */}
       <div className="flex justify-center gap-6 mb-10 flex-wrap">
-        <button className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-6 py-3 cursor-pointer rounded hover:bg-gray-100 transition">
-          <img src="/src/assets/play.png" alt="play " className="w-6 h-6" />
+        {/* Google Play Button */}
+        <a
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-6 py-3 cursor-pointer rounded hover:bg-gray-100 transition"
+        >
+          <img src="/src/assets/play.png" alt="play" className="w-6 h-6" />
           <span className="font-medium">Google Play</span>
-        </button>
+        </a>
 
-        <button className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-6 py-3 cursor-pointer rounded  hover:bg-gray-100 transition">
+        {/* App Store Button */}
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-6 py-3 cursor-pointer rounded hover:bg-gray-100 transition"
+        >
           <FaApple className="text-gray-800 text-2xl" />
           <span className="font-medium">App Store</span>
-        </button>
+        </a>
       </div>
 
       {/* Image Section */}
