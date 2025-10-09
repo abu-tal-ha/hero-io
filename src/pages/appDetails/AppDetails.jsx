@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import { FaDownload, FaStar, FaCommentDots } from "react-icons/fa";
 import {
@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
+import { toast, Toaster } from "react-hot-toast"; // ✅ Toast Import
 
 export default function AppDetails() {
   const { id } = useParams();
@@ -17,14 +18,26 @@ export default function AppDetails() {
   const data = useLoaderData();
   const app = data.find((item) => item.id === appId);
 
+  const [installed, setInstalled] = useState(false); // ✅ Track installation state
+
   if (!app) {
     return (
       <div className="py-40 text-center text-gray-500">App not found.</div>
     );
   }
 
+  // ✅ Handle install click
+  const handleInstall = () => {
+    setInstalled(true);
+    toast.success(`${app.title} installed successfully!`, {
+      duration: 3000,
+      position: "top-right",
+    });
+  };
+
   return (
     <section className="container mx-auto px-4 py-16">
+      <Toaster /> {/* ✅ Toast Container */}
       {/* === Main App Card === */}
       <div className="p-6 md:p-10 flex flex-col md:flex-row items-center gap-24">
         {/* App Icon */}
@@ -74,15 +87,22 @@ export default function AppDetails() {
             </div>
           </div>
 
-          <button className="mt-8 cursor-pointer bg-green-500 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg transition">
-            Install Now ({app.size} MB)
+          {/* ✅ Install Button */}
+          <button
+            onClick={handleInstall}
+            disabled={installed}
+            className={`mt-8 font-semibold px-6 py-2 rounded-lg transition ${
+              installed
+                ? "bg-gray-400 text-white cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-700 text-white cursor-pointer"
+            }`}
+          >
+            {installed ? "Installed" : `Install Now (${app.size} MB)`}
           </button>
         </div>
       </div>
-
       <div className="border-t border-gray-700/40"></div>
-
-      {/* === Ratings Distribution with Recharts === */}
+      {/* === Ratings Distribution === */}
       <div className="mt-10 bg-white p-6 rounded-2xl shadow-sm">
         <h3 className="text-2xl font-bold text-gray-800 mb-4">Ratings</h3>
 
@@ -91,7 +111,7 @@ export default function AppDetails() {
             <BarChart
               data={[...app.ratings].reverse()}
               layout="vertical"
-              margin={{ top: 10, right: 30, left: 30, bottom: 10 }}
+              margin={{ top: 10, right: 30, bottom: 10 }}
             >
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis type="number" />
@@ -115,7 +135,7 @@ export default function AppDetails() {
               />
               <Bar
                 dataKey="count"
-                fill="#10b981" // Tailwind green-500
+                fill="#10b981"
                 barSize={20}
                 radius={[0, 6, 6, 0]}
               />
@@ -123,7 +143,6 @@ export default function AppDetails() {
           </ResponsiveContainer>
         </div>
       </div>
-
       {/* === Description === */}
       <div className="mt-10 p-6 rounded-2xl">
         <h3 className="text-lg font-semibold text-gray-800 mb-3">
